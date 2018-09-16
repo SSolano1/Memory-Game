@@ -9,7 +9,7 @@ const FriendCard = props => (
 >
   <div className="card-img text-center">
     <div className="img-container">
-      <img alt={props.name} src={props.image} />
+      <img className = "click-item" alt={props.name} src={props.image} />
       
     </div>
  </div>
