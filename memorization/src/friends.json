@@ -1,0 +1,86 @@
+[
+  {
+      "id": 1,
+      "name": "Black Widow",
+      "image": "http://i.annihil.us/u/prod/marvel/i/mg/f/30/50fecad1f395b.jpg",
+      "clicked": false
+   
+  },
+  {
+      "id": 2,
+      "name": "Jessica Jones",
+      "image": "http://i.annihil.us/u/prod/marvel/i/mg/d/00/5390e41260345.jpg",
+      "clicked": false
+      
+  },
+  {
+      "id": 3,
+      "name": "Storm",
+      "image": "http://i.annihil.us/u/prod/marvel/i/mg/6/40/526963dad214d.jpg",
+      "clicked": false
+     
+  },
+  {
+    "id": 4,
+    "name": "Scarlett Witch",
+    "image": "http://i.annihil.us/u/prod/marvel/i/mg/6/70/5261a7d7c394b.jpg",
+    "clicked": false
+   
+},
+{
+  "id": 5,
+  "name": "Captain Marvel",
+  "image": "http://i.annihil.us/u/prod/marvel/i/mg/6/80/5269608c1be7a.jpg",
+  "clicked": false
+ 
+},
+{
+  "id": 6,
+  "name": "Rogue",
+  "image": "http://i.annihil.us/u/prod/marvel/i/mg/3/10/5112d84e2166c.jpg",
+  "clicked": false
+ 
+},
+{
+  "id": 7,
+  "name": "Psylocke",
+  "image": "http://i.annihil.us/u/prod/marvel/i/mg/1/50/526961ce86539.jpg",
+  "clicked": false
+ 
+},
+{
+  "id": 8,
+  "name": "Emma Frost",
+  "image": "http://i.annihil.us/u/prod/marvel/i/mg/9/80/51151ef7cf4c8.jpg",
+  "clicked": false
+ 
+},
+{
+  "id": 9,
+  "name": "Black Cat",
+  "image": "http://i.annihil.us/u/prod/marvel/i/mg/e/03/526952357d91c.jpg",
+  "clicked": false
+ 
+},
+{
+  "id": 10,
+  "name": "Electra",
+  "image": "http://i.annihil.us/u/prod/marvel/i/mg/8/d0/51114fec4a2c8.jpg",
+  "clicked": false
+ 
+},
+{
+  "id": 11,
+  "name": "Domino",
+  "image": "http://i.annihil.us/u/prod/marvel/i/mg/f/60/526031dc10516.jpg",
+  "clicked": false
+ 
+},
+{
+  "id": 12,
+  "name": "Dagger",
+  "image": "http://i.annihil.us/u/prod/marvel/i/mg/8/e0/528d31c9eac10.jpg",
+  "clicked": false
+ 
+}
+]
