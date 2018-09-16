@@ -4,7 +4,7 @@ import Wrapper from "./components/Wrapper";
 // import Title from "./components/Title";
 import Nav from "./components/Nav";
 import Header from "./components/Header";
-import Container from "./components/Container";
+// import Container from "./components/Container";
 import friends from "./friends.json";
 import arrayShuffle from "array-shuffle";
 import "./App.css";
@@ -20,7 +20,7 @@ class App extends Component {
   };
 
   // shuffleImg = ()=> {
- 
+
   //   const shuffled = arrayShuffle(friends);
   //   this.setState({friends: shuffled})
 
@@ -61,7 +61,8 @@ class App extends Component {
       rightWrong: "You Lose!",
       clicked: []
     });
-    this.shuffleImg();
+    window.location.href="/";
+   
   };
 
   // shuffleImg = () => {
@@ -69,44 +70,45 @@ class App extends Component {
   //   this.setState({ friends: shuffledFriends });
   // };
 
-  shuffleImg = ()=> {
+  shuffleImg = () => {
     let shuffled = arrayShuffle(friends);
-    this.setState({friends: shuffled})
+    this.setState({ friends: shuffled })
   };
 
 
-// Map over this.state.friends and render a FriendCard component for each friend object
+  // Map over this.state.friends and render a FriendCard component for each friend object
   render() {
     return (
-      <Wrapper>
+      <div>
         <Nav
           title="Women of Marvel"
           score={this.state.currentScore}
           topScore={this.state.topScore}
           rightWrong={this.state.rightWrong}
         />
-      <Header />  
-      <Container>
-        {/* <Title>Women of Marvel</Title> */}
-        {this.state.friends.map(friend => (
-          <FriendCard
-            key={friend.id}
-            imgClick = {this.imgClick}
-          
-            handleIncrement={this.handleIncrement}
-            handleReset={this.handleReset}
-            handleShuffle={this.handleShuffle}
-            id={friend.id}
-            image={friend.image}
+        <Header />
+        <Wrapper>
 
-          />
-        ))}
-        </Container>
+          {/* <Title>Women of Marvel</Title> */}
+          {this.state.friends.map(friend => (
+            <FriendCard
+              key={friend.id}
+              imgClick={this.imgClick}
+
+              handleIncrement={this.handleIncrement}
+              handleReset={this.handleReset}
+              handleShuffle={this.handleShuffle}
+              id={friend.id}
+              image={friend.image}
+
+            />
+          ))}
         </Wrapper>
-      
+      </div>
     );
   }
 }
 
 export default App;
+
 

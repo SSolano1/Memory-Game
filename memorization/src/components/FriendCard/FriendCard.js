@@ -3,7 +3,7 @@ import "./FriendCard.css";
 
 
 const FriendCard = props => (
-  <div className= "card col-sm-3"
+  <div className= " col-sm-3"
   value={props.id} 
   // onClick={props.imgClick}
 onClick={() => props.imgClick(props.id)}>
