@@ -3,6 +3,8 @@ import FriendCard from "./components/FriendCard";
 import Wrapper from "./components/Wrapper";
 // import Title from "./components/Title";
 import Nav from "./components/Nav";
+import Header from "./components/Header";
+import Container from "./components/Container";
 import friends from "./friends.json";
 import arrayShuffle from "array-shuffle";
 import "./App.css";
@@ -27,15 +29,18 @@ class App extends Component {
   imgClick = id => {
     console.log("click");
     if (this.state.clicked.indexOf(id) === -1) {
+      console.log("increment");
       this.handleIncrement();
       this.setState({ clicked: this.state.clicked.concat(id) });
     } else {
+      console.log("failed-increment");
       this.handleReset();
     }
   };
 
   handleIncrement = () => {
     const newScore = this.state.currentScore + 1;
+    console.log("hello " + newScore);
     this.setState({
       currentScore: newScore,
       rightWrong: ""
@@ -65,7 +70,7 @@ class App extends Component {
   // };
 
   shuffleImg = ()=> {
-    const shuffled = arrayShuffle(friends);
+    let shuffled = arrayShuffle(friends);
     this.setState({friends: shuffled})
   };
 
@@ -75,25 +80,28 @@ class App extends Component {
     return (
       <Wrapper>
         <Nav
-          title="Gaurdians of the Galaxy Clicky Game"
+          title="Women of Marvel"
           score={this.state.currentScore}
           topScore={this.state.topScore}
           rightWrong={this.state.rightWrong}
         />
+      <Header />  
+      <Container>
         {/* <Title>Women of Marvel</Title> */}
         {this.state.friends.map(friend => (
           <FriendCard
-            imgClick = {this.imgClick}
-            id={friend.id}
             key={friend.id}
-            name={friend.name}
-            image={friend.image}
+            imgClick = {this.imgClick}
+          
             handleIncrement={this.handleIncrement}
             handleReset={this.handleReset}
-            handleShuffle={this.handleShuffle}  
+            handleShuffle={this.handleShuffle}
+            id={friend.id}
+            image={friend.image}
 
           />
         ))}
+        </Container>
         </Wrapper>
       
     );
