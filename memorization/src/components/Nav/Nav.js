@@ -3,7 +3,7 @@ import "./Nav.css";
 
 const Nav = props => (
 <nav className="navbar sticky-top navbar-light">
-  <a className="navbar-brand" href="/">Clicky</a>
+  <a className="navbar-brand" href="/">{props.restart}</a>
   <p id="currentScore">Current Score: {props.score} </p>
   <p id="topScore">Top Score: {props.topScore} </p>
   <p id="rw">{props.rightWrong}</p>

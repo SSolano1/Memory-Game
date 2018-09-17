@@ -16,6 +16,7 @@ class App extends Component {
     currentScore: 0,
     topScore: 0,
     rightWrong: "",
+    restart:"",
     clicked: [],
   };
 
@@ -43,13 +44,17 @@ class App extends Component {
     console.log("hello " + newScore);
     this.setState({
       currentScore: newScore,
-      rightWrong: ""
+      rightWrong: "",
+      restart:""
     });
-    if (newScore >= this.state.topScore) {
-      this.setState({ topScore: newScore });
-    }
-    else if (newScore === 12) {
+    
+    if (newScore === 12) {
       this.setState({ rightWrong: "You win!" });
+      this.setState({ topScore: newScore });
+      this.setState({ restart: "Restart" });
+    }
+    else if (newScore >= this.state.topScore) {
+      this.setState({ topScore: newScore});
     }
     this.shuffleImg();
   };
@@ -59,9 +64,10 @@ class App extends Component {
       currentScore: 0,
       topScore: this.state.topScore,
       rightWrong: "You Lose!",
+      restart: "",
       clicked: []
     });
-    window.location.href="/";
+    // window.location.href="/";
    
   };
 
@@ -85,6 +91,7 @@ class App extends Component {
           score={this.state.currentScore}
           topScore={this.state.topScore}
           rightWrong={this.state.rightWrong}
+          restart={this.state.restart}
         />
         <Header />
         <Wrapper>
