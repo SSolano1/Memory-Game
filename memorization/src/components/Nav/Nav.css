@@ -6,11 +6,12 @@ nav {
   font-family: 'Bungee', cursive;
   height: 80px;
   color: #fff;
-  background-color: #14efff;
+  background-color: hsla(218, 15%, 5%, .8);
 }
 
 a {
   color: #fed420;
+  text-decoration: none;
 }
 
 h6 {
@@ -33,6 +34,7 @@ ul {
   display: flex; 
   align-items: center;
 } 
+
 
  @media only screen and (max-width: 750px) { 
   #cur-sco, #top-sco {

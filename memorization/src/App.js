@@ -51,7 +51,7 @@ class App extends Component {
     if (newScore === 12) {
       this.setState({ rightWrong: "You win!" });
       this.setState({ topScore: newScore });
-      this.setState({ restart: "Restart" });
+      this.setState({ restart: "Play Again" });
     }
     else if (newScore >= this.state.topScore) {
       this.setState({ topScore: newScore});

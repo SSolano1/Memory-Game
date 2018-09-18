@@ -1,19 +1,26 @@
  .jumbotron {
   background-color: #2c323c;
-  background-image: src = "./public/images/marvel-7.jpg";
-  background-position: center center;
-  background-size: cover;
+  background-image: url('./images/marvel-7.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 75%;
   color: #fff;
-  min-height: 400px;
+  min-height: 370px;
   text-align: center;
 } 
 .header h1 {
-  margin: 0;
-  margin-bottom: 30px;
-  font-size: 4rem;
+  margin-top: 130px;
+  margin-bottom: 50px;
+  font-size: 3rem;
 } 
+.header-div-wrapper {
+  margin-top: -60px;
+}
 
 .header {
     width: 1680px;
    
+  }
+  .header-div-wrapper{
+
   }
