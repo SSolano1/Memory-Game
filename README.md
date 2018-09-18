@@ -6,7 +6,7 @@ This project is a memorization game.  In this assignment we are using React. To 
 ### GIFs
 
 ##Win
-  <a> <img src="./memorization/images/memory-game.gif"></a>
+  <a> <img src="./public/images/memory-game.gif"></a>
 
 ### Technologies Used
 <ul>
