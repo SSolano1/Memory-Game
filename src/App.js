@@ -29,8 +29,10 @@ class App extends Component {
 
   imgClick = id => {
     console.log("click");
+    
     if (this.state.clicked.indexOf(id) === -1) {
       console.log("increment");
+    
       this.handleIncrement();
       this.setState({ clicked: this.state.clicked.concat(id) });
     } else {

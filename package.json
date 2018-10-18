@@ -4,8 +4,8 @@
   "private": true,
   "homepage": "https://ssolano1.github.io/Memory-Game/",
   "dependencies": {
-    "gh-pages": "^2.0.0",
     "array-shuffle": "^1.0.1",
+    "gh-pages": "^2.0.0",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-scripts": "1.1.5"
@@ -18,5 +18,4 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
-
 }
