@@ -8,5 +8,8 @@
   /* justify-content: space-around; */
   align-content: flex-start;
   overflow: auto;
- 
+}
+
+.col-sm-3 {
+  padding-bottom: 10px;
 }
