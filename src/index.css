@@ -8,3 +8,8 @@ html, body, #root {
   margin: 0;
   height: 100%;
 }
+
+body {
+  background: url(./marvel_avengers_battle_for_the_earth_artwork1.jpg);
+  background-size: cover;
+}
